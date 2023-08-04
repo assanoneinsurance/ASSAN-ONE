@@ -33,40 +33,6 @@ export const registerUser = createAsyncThunk(
 );
 
 
-// Redux action to Login
-// export const login = createAsyncThunk(
-//   'user/login',
-//   async (userData,  { rejectWithValue }) => {
-//     try {
-
-//       const response = await axios.post('http://localhost:8080/api/login', userData);
-//       console.log(response.data);
-//       localStorage.setItem('token', response.data.token);
-//       localStorage.setItem('user', JSON.stringify(response.data.user));
-//       return response.data;
-      
-      
-//     } catch (error) {
-//       // Handle error and return it using rejectWithValue
-//       return rejectWithValue(error);
-//     }
-//   }
-// );
-
-// Send otp 
-// export const sendOTP = createAsyncThunk(
-//   'user/sendOTP',
-//   async (mobile, {rejectWithValue}) => {
-//     try {
-//       const response = await axios.post('http://localhost:8080/api/sendOTP', mobile);
-//       return response.data;
-//     } catch (error) {
-//       return rejectWithValue(error);
-//     }
-//   }
-// )
-
-
 export const login = createAsyncThunk(
   'user/login',
   async (userData) => {
@@ -170,17 +136,6 @@ const authSlice = createSlice({
     }
 })
 
-
-
-
-const decodeToken = (token) => {
-  try {
-    return jwtDecode(token);
-  } catch (error) {
-    // Handle token decoding error (e.g., invalid token format)
-    return null;
-  }
-};
 
 
 
