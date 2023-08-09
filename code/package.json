@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://127.0.0.1:8080/",
-  "homepage": "https://Rohit-huta.github.io/AssanOne",
+  "homepage": "https://assanoneinsurance.github.io/ASSAN-ONE",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
