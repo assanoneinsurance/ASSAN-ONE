@@ -18,25 +18,25 @@ import Dashboard from './screens/Dashboard';
 import Claims from './screens/Claims';
 import Training from './screens/Training';
 
-import Confirmation from './screens/Health Insurance/Confirmation';
-import PersonalDetails from './screens/Health Insurance/PersonalDetails';
+import HConfirmation from './screens/Sell Insurance/Health Insurance/HConfirmation';
+import PersonalDetails from './screens/Sell Insurance/Health Insurance/PersonalDetails';
 import SavedQoutes from './screens/SavedQoutes';
-import DetailsOfCustomer from './screens/Health Insurance/DetailsOfCustomer';
-import AgainDetailsOfCustomer from './screens/Health Insurance/AgainDetailsOfCustomer';
-import PlanDetails from './screens/Health Insurance/PlanDetails';
+import DetailsOfCustomer from './screens/Sell Insurance/Health Insurance/DetailsOfCustomer';
+import PlanDetails from './screens/Sell Insurance/Health Insurance/PlanDetails';
 
 // Car Insurance
-import PConfirmation from './screens/PrivateCar/PConfirmation'
-import PPersonalDetails from './screens/PrivateCar/PPersonalDetails'
-import PPlanDetails from './screens/PrivateCar/PPlanDetails'
-import PCustomer from './screens/PrivateCar/PCustomer';
+import PConfirmation from './screens/Sell Insurance//PrivateCar/PConfirmation'
+import PPersonalDetails from './screens/Sell Insurance//PrivateCar/PPersonalDetails'
+import PPlanDetails from './screens/Sell Insurance//PrivateCar/PPlanDetails'
+import PCustomer from './screens/Sell Insurance//PrivateCar/PCustomer';
+import CarDetails from './screens/Sell Insurance//PrivateCar/CarDetails';
 
 // Two WHeeler
-import TCustomer from './screens/TwoWheeler/TCustomer';
-import TwoWheelerDetails from './screens/TwoWheeler/TwoWheelerDetails';
-import TConfirmation from './screens/TwoWheeler/TConfirmation';
-import TPersonalDetails from './screens/TwoWheeler/TPersonalDetails';
-import TPlanDetails from './screens/TwoWheeler/TPlanDetails';
+import TCustomer from './screens/Sell Insurance//TwoWheeler/TCustomer';
+import TwoWheelerDetails from './screens/Sell Insurance//TwoWheeler/TwoWheelerDetails';
+import TConfirmation from './screens/Sell Insurance//TwoWheeler/TConfirmation';
+import TPersonalDetails from './screens/Sell Insurance//TwoWheeler/TPersonalDetails';
+import TPlanDetails from './screens/Sell Insurance//TwoWheeler/TPlanDetails';
 
 
 
@@ -46,7 +46,6 @@ import Leads from './screens/Leads';
 import Renewal from './screens/Renewal';
 import Prospects from './screens/Prospects';
 import ACustomer from './screens/ACustomer';
-import CarDetails from './screens/PrivateCar/CarDetails';
 import Register from './screens/Register/Register';
 import jwtDecode from 'jwt-decode';
 
@@ -112,7 +111,7 @@ function App() {
               <Route path='/personalDetails' element={ <PersonalDetails />}></Route>
               <Route path='/planDetails' element={ <PlanDetails />}></Route>
               <Route path='/healthInsurance' element={ <DetailsOfCustomer />}></Route>
-              <Route path='/confirmation' element={ <Confirmation />}></Route>
+              <Route path='/confirmation' element={ <HConfirmation />}></Route>
   
               {/* Car INSURANCE */}
 

@@ -4,7 +4,6 @@ import Cookies from "js-cookie";
 import jwtDecode from 'jwt-decode';
 
 // Get token from localstorage
-
 const initialState = {
     msg: "default message",
     isLoggedIn: false,
@@ -14,6 +13,7 @@ const initialState = {
     user: '',
     error: null
 }
+
 
 
 
@@ -122,9 +122,6 @@ const authSlice = createSlice({
         [logout.fulfilled]: (state, action) => {
             state.msg = "logout Successfull";
             state.loading = false;
-           
-           
-
         },
         [logout.rejected]: (state, {payload: {error, msg}}) => {
             state.loading = false;
